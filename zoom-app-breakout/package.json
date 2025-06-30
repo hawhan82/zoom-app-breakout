@@ -1,0 +1,15 @@
+{
+  "name": "zoom-app-breakout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@zoom/appssdk": "^0.16.31"
+  }
+}

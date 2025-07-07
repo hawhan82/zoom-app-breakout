@@ -1,4 +1,12 @@
-* 
+/*
   X-Content-Type-Options: nosniff
   Content-Security-Policy: default-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'
-  Referrer-Policy: strict-origin-when-cross-origin
+  Referrer-Policy: strict-origin-when-cross-origin[build]
+  publish = "./"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Content-Security-Policy = "default-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
